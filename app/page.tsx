@@ -16,16 +16,17 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { codeSnippets } from '@/lib/codeSnippets';
 import FloatingBadge from "@/components/floating-badge";
-
+import Buttons from "@/components/buttons";
 // Types
-type ComponentName = 'animatedCard' | 'floatingNavbar' | 'chatGPTCarousel' | 'videoPlayer' | 'typography' | 'floatingBadge';
+type ComponentName = 'animatedCard' | 'floatingNavbar' | 'chatGPTCarousel' | 'videoPlayer' | 'typography' | 'buttons';
 
 // Component configuration
 const components = [
+  { name: 'buttons', title: 'Buttons', Component: Buttons },
   { name: 'animatedCard', title: 'Animated Card', Component: AnimatedCard },
   { name: 'floatingNavbar', title: 'Floating Navbar', Component: NavBar },
-  { name: 'chatGPTCarousel', title: 'ChatGPT Carousel', Component: ChatGPTCarousel },
   { name: 'videoPlayer', title: 'Custom Video Player', Component: VideoPlayer },
+  { name: 'chatGPTCarousel', title: 'ChatGPT Carousel', Component: ChatGPTCarousel },
   { name: 'typography', title: 'Typography Demo', Component: TypographyDemo },
 ] as const;
 
@@ -36,7 +37,7 @@ export default function Page() {
     chatGPTCarousel: false,
     videoPlayer: false,
     typography: false,
-    floatingBadge: false
+    buttons: false
   });
 
   const toggleCodeVisibility = (component: ComponentName) => {
@@ -77,7 +78,7 @@ export default function Page() {
           </Button>
         </div>
       ) : (
-        <div className="w-full overflow-x-auto">
+        <div className="w-full">
           <Component videoSrc={"https://utfs.io/f/08b0a37f-afd7-4623-b5cc-e85184528fce-1f02.mp4"} title={"tsafi"} description={"an opensource ai blog site builder and CMS. launch a blog in minutes."} image={"https://utfs.io/f/59a2a3e1-f1b9-4152-97d2-38dea6e14106-3hq5f6.png"} />
         </div>
       )}
@@ -85,8 +86,7 @@ export default function Page() {
   );
 
   return (
-    <main className="flex flex-col gap-4 items-center justify-start min-h-screen w-full pt-4 pb-4 sm:pb-[4rem] px-4 sm:px-0">
-      <NavBar />
+    <main className="flex flex-col gap-4 items-center justify-start min-h-screen w-full pt-4 pb-4 sm:pb-[4rem] px-4 sm:px-0 mt-[4rem]">
       <div className="flex flex-col items-start justify-center gap-4 w-full sm:w-[90%] md:w-[80%] lg:w-[70%]">
         <h1 className="text-lg sm:text-xl font-medium">StyleUI Components</h1>
         <Separator />
@@ -94,7 +94,7 @@ export default function Page() {
           <h2 className="text-md font-medium mb-2">Installation Instructions</h2>
           <p className="mb-2 text-sm">To use these components, you need to install shadcn/ui. Follow these steps:</p>
           <ol className="text-xs sm:text-sm list-decimal list-inside space-y-1">
-            <li>Run <code className="bg-gray-200 dark:bg-zinc-700 px-1 py-0.5 rounded text-xs">npx shadcn@latest init</code> in your project directory</li>
+            <li>Run <code className="bg-gray-200 dark:bg-zinc-700 px-1 py-0.5 rounded text-xs">npx shadcn-ui@latest init</code> in your project directory</li>
             <li>Follow the prompts to set up shadcn/ui</li>
             <li>Install necessary components using <code className="bg-gray-200 dark:bg-zinc-700 px-1 py-0.5 rounded text-xs">npx shadcn-ui@latest add [component-name]</code></li>
           </ol>
