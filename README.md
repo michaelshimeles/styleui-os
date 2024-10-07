@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# StyleUI Components
+
+StyleUI Components is a collection of reusable UI components built with Next.js, TailwindCSS, and shadcn/ui. This project showcases various custom components that can be easily integrated into your Next.js applications.
+
+## Features
+
+- Animated Card
+- Floating Navbar
+- ChatGPT Carousel
+- Custom Video Player
+- Typography Demo
+- Floating Badge
+- Dark mode support
+- Responsive design
 
 ## Getting Started
 
-First, run the development server:
+First, clone the repository and install the dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/styleui-components.git
+cd styleui-components
+npm install
 ```
+
+Then, run the development server:
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To use these components, you need to have shadcn/ui installed in your project. Follow these steps:
 
-## Learn More
+1. Run `npx shadcn@latest init` in your project directory
+2. Follow the prompts to set up shadcn/ui
+3. Install necessary components using `npx shadcn-ui@latest add [component-name]`
 
-To learn more about Next.js, take a look at the following resources:
+For more detailed instructions, visit the [shadcn/ui documentation](https://ui.shadcn.com/docs/installation).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `app/`: Contains the main application code
+  - `page.tsx`: The main page component showcasing all the StyleUI components
+  - `layout.tsx`: The root layout component
+- `components/`: Contains all the custom components
+- `lib/`: Contains utility functions and configurations
 
-## Deploy on Vercel
+## Usage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Each component is showcased on the main page with a "View Code" button that reveals the component's source code. You can easily copy the code and integrate it into your own projects.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Customization
+
+You can customize the components by modifying their respective files in the `components/` directory. The project uses TailwindCSS for styling, so you can easily adjust the appearance by changing the Tailwind classes.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
