@@ -5,6 +5,7 @@ StyleUI Components is a collection of reusable UI components built with Next.js,
 ## Features
 
 - Animated Card
+- Custom Buttons
 - Floating Navbar
 - ChatGPT Carousel
 - Custom Video Player
