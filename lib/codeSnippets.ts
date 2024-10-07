@@ -423,7 +423,6 @@ export const VideoPlayer: React.FC<CustomVideoPlayerProps> = ({ videoSrc }) => {
       </div>
       <div className={\`
           text-white
-         bg-black bg-opacity-50
           p-2 w-full absolute
           bottom-0
           left-0
