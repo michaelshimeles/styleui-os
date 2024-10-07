@@ -9,8 +9,7 @@ StyleUI Components is a collection of reusable UI components built with Next.js,
 - ChatGPT Carousel
 - Custom Video Player
 - Typography Demo
-- Floating Badge
-- Dark mode support
+- ShadCN Dark mode support
 - Responsive design
 
 ## Getting Started
@@ -18,9 +17,9 @@ StyleUI Components is a collection of reusable UI components built with Next.js,
 First, clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/your-username/styleui-components.git
-cd styleui-components
-npm install
+git clone https://github.com/michaelshimeles/styleui-os.git
+cd styleui-os
+yarn add
 ```
 
 Then, run the development server:
