@@ -96,7 +96,7 @@ export default function Page() {
           <ol className="text-xs sm:text-sm list-decimal list-inside space-y-1">
             <li>Run <code className="bg-gray-200 dark:bg-zinc-700 px-1 py-0.5 rounded text-xs">npx shadcn@latest init</code> in your project directory</li>
             <li>Follow the prompts to set up shadcn/ui</li>
-            <li>Install necessary components using <code className="bg-gray-200 dark:bg-zinc-700 px-1 py-0.5 rounded text-xs">npx shadcn-ui@latest add [component-name]</code></li>
+            <li>Install necessary components using <code className="bg-gray-200 dark:bg-zinc-700 px-1 py-0.5 rounded text-xs">npx shadcn@latest add [component-name]</code></li>
           </ol>
           <p className="mt-2 text-xs sm:text-sm">For more detailed instructions, visit the <a href="https://ui.shadcn.com/docs/installation" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">shadcn/ui documentation</a>.</p>
         </div>
