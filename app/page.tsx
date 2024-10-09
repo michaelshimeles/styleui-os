@@ -94,7 +94,7 @@ export default function Page() {
           <h2 className="text-md font-medium mb-2">Installation Instructions</h2>
           <p className="mb-2 text-sm">To use these components, you need to install shadcn/ui. Follow these steps:</p>
           <ol className="text-xs sm:text-sm list-decimal list-inside space-y-1">
-            <li>Run <code className="bg-gray-200 dark:bg-zinc-700 px-1 py-0.5 rounded text-xs">npx shadcn-ui@latest init</code> in your project directory</li>
+            <li>Run <code className="bg-gray-200 dark:bg-zinc-700 px-1 py-0.5 rounded text-xs">npx shadcn@latest init</code> in your project directory</li>
             <li>Follow the prompts to set up shadcn/ui</li>
             <li>Install necessary components using <code className="bg-gray-200 dark:bg-zinc-700 px-1 py-0.5 rounded text-xs">npx shadcn-ui@latest add [component-name]</code></li>
           </ol>
