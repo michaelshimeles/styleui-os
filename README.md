@@ -20,11 +20,13 @@ First, clone the repository and install the dependencies:
 ```bash
 git clone https://github.com/michaelshimeles/styleui-os.git
 cd styleui-os
-yarn add
+yarn
 ```
 
 Then, run the development server:
-
+```
+yarn dev
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
